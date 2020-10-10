@@ -27,5 +27,4 @@ const ProductItem = (props) => {
     </Card>
   );
 };
-
 export default ProductItem;
