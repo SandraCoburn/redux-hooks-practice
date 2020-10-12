@@ -8,25 +8,31 @@ Implement Redux Hooks
 
     - Use CRA to create redux-hooks
         ```
-        npx create-react-app redux-hooks
+            npx create-react-app redux-hooks
         ```
 
 ### Create Navigation
 
     - Install dependencies for router
         ```
-        npm install react-router-dom
+            npm install react-router-dom
         ```
 
 ### Create Project items component
 
     - Install material ui dependencies
         ```
-        npm install @material-ui/core
+            npm install @material-ui/core
         ```
 
 ### Install Redux
 
     ```
-    npm install redux react-redux
+        npm install redux react-redux
     ```
+
+### Changed state management from Redux to Context API
+
+    - Removed Redux store
+    - Added a new folder named context to hold the state: productsProvider
+    - Used useContext hook
