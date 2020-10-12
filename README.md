@@ -36,3 +36,13 @@ Implement Redux Hooks
     - Removed Redux store
     - Added a new folder named context to hold the state: productsProvider
     - Used useContext hook
+
+### Downside of Contex API
+
+    - Context API it's not meant to hold global state, only for low frequency state updates
+    - Performance is not optimized to handle high frequency state changes. The way Context API works is that whenever something changes in your context it doesn't have a way to figuring out which component is concern about the change and which component is not. Meaning that every component using contenxt will rebuil or re render when a change occurs in the context.
+    - Context is great to handle amall changes like authentications but not all state.
+
+### Create a Custom Hook as a Store
+
+    - It will only use React hooks - useState and useEffect
